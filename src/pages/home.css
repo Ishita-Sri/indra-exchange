@@ -83,10 +83,9 @@
   letter-spacing: 0.8px;
 }
 
-.img-in{
-  transform: skewX(20deg); 
-  gap:20%;
-
+.img-in {
+  transform: skewX(20deg);
+  gap: 20%;
 }
 
 .left {
@@ -105,7 +104,7 @@
 
 .earn {
   background: url("../assets/border2.svg"),
-  #DD00B8 -87.728px 68.02px / 71.664% 168.611% no-repeat;
+    #dd00b8 -87.728px 68.02px / 71.664% 168.611% no-repeat;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -208,7 +207,7 @@
   display: flex;
   align-items: center;
   padding: 10px;
-  background-color:#021a60;
+  background-color: #021a60;
   border-radius: 5px;
 }
 
@@ -263,6 +262,20 @@
   justify-content: space-between; /* This spaces the images evenly */
   margin: 5%;
   gap: 10%;
+  color: #ddd;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: "Quicksand", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%; /* 31.2px */
+  letter-spacing: 0.48px;
+}
+
+.sports-all-3{
+  margin-top: 35px;
+  display: flex;
+  gap:13px
 }
 
 .sport-card {
@@ -407,6 +420,7 @@ sport-card img::after {
   align-items: center; /* Center aligns children vertically */
   width: 90%;
   margin-left: 5%;
+  margin-top: 80px;
 }
 
 .spon-head-1,
@@ -502,7 +516,6 @@ sport-card img::after {
   height: auto;
   position: relative;
   padding: 15px; /* New */
-  
 }
 
 .pink-blur {
@@ -550,28 +563,26 @@ sport-card img::after {
   gap: 15px;
 }
 
-.star-1{
+.star-1 {
   width: 40px;
   position: absolute;
-  top:180px;
-  left:5px
+  top: 180px;
+  left: 5px;
 }
-.star-2{
+.star-2 {
   width: 40px;
   position: absolute;
-  top:180px;
-  right:3.3%;
-  z-index:1;
+  top: 180px;
+  right: 3.3%;
+  z-index: 1;
   float: right;
   overflow: hidden;
-  
-  
 }
-.star-3{
+.star-3 {
   width: 40px;
   position: absolute;
-  top:480px;
-  right:0;
+  top: 480px;
+  right: 0;
   float: right;
   overflow: hidden;
 }
@@ -594,7 +605,7 @@ sport-card img::after {
 @media only screen and (max-width: 768px) {
   .footer-content {
     flex-direction: column;
-    gap:50px;
+    gap: 50px;
     width: 80%;
     padding-left: 8%;
   }
@@ -656,8 +667,6 @@ sport-card img::after {
 
   .landing-page {
     width: 100%;
-  
-    
 
     background-color: #021a60;
   }
@@ -666,43 +675,43 @@ sport-card img::after {
     height: auto;
     width: 90%;
     padding-bottom: 10px;
-   
-     /* Adjus90%t as necessary to create some space at the bottom */
-}
 
-.inner-card img{
-  width: 300px;
-  height: 260px;
-}
+    /* Adjus90%t as necessary to create some space at the bottom */
+  }
 
-.inner-card {
+  .inner-card img {
+    width: 300px;
+    height: 260px;
+  }
+
+  .inner-card {
     flex-direction: column;
     height: auto;
-}
+  }
 
-.lower-reg {
+  .lower-reg {
     width: 80%; /* You might want to adjust this based on your design requirements */
     margin-left: 10%; /* Adjust to center the element */
     margin-top: 15px; /* Adds some space between the elements */
-}
+  }
 
-.lower-reg {
-  font-size: 16px; /* Reduced font size */
-  line-height: 120%; /* Adjusted line height */
-  /* Add any other necessary styles for mobile here */
-}
+  .lower-reg {
+    font-size: 16px; /* Reduced font size */
+    line-height: 120%; /* Adjusted line height */
+    /* Add any other necessary styles for mobile here */
+  }
 
-.image-container {
-  width:90%;
-  margin-left: 5%;
-  align-content: center;
-  justify-content: center;
-}
+  .image-container {
+    width: 90%;
+    margin-left: 5%;
+    align-content: center;
+    justify-content: center;
+  }
 
-.left{
-  width: 80%;
-  margin-left: 8%;
-}
+  .left {
+    width: 80%;
+    margin-left: 8%;
+  }
 
   /* Additional adjustments can be made if necessary. */
 }
