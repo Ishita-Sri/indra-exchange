@@ -192,7 +192,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="banner-cric">
+      {/* <div className="banner-cric">
         <div className="banner-left">
           <div className="banner-left-image"></div>
         </div>
@@ -208,7 +208,7 @@ const Home = () => {
             <div className="text-2"> 1.97</div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div className="sponsor-sec">
         <div className="spon-head-1">
@@ -218,9 +218,9 @@ const Home = () => {
             We are thankful to our awesome gaming partner’s
           </div>
         </div>
-        <div className="spon-head-2">
+        {/* <div className="spon-head-2">
           <div className="button-2">See All</div>
-        </div>
+        </div> */}
       </div>
 
       {/* <div class="flex-item">
@@ -598,7 +598,7 @@ const Home = () => {
         <div className="pink-blur"> </div>
 
         <div className="footer-content">
-          <div className="footer-content-2" style={{ width: "45%" }}>
+          <div className="footer-content-2" style={{ width: "80%" }}>
             <img src={logo}></img>
 
             <div className="footer-1">Play exciting games win more prize's</div>
@@ -688,7 +688,7 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="footer-content-2" style={{ width: "39%" }}>
+          {/* <div className="footer-content-2" style={{ width: "39%" }}>
             <div className="footer-2">Sitemap</div>
 
             <div className="footer-1">Terms $ Conditions</div>
@@ -697,9 +697,9 @@ const Home = () => {
             <div className="footer-1">Responsible Gaming</div>
             <div className="footer-1">Privacy Policy</div>
             <div className="footer-1">Rules</div>
-          </div>
+          </div> */}
 
-          <div className="footer-content-2" style={{ width: "15%" }}>
+          <div className="footer-content-2" style={{ width: "10%" }}>
             <div className="footer-2">Powered by</div>
             <img src ={rob}></img>
 

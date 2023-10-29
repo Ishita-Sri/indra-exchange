@@ -502,6 +502,7 @@ sport-card img::after {
   height: auto;
   position: relative;
   padding: 15px; /* New */
+  
 }
 
 .pink-blur {
@@ -593,6 +594,9 @@ sport-card img::after {
 @media only screen and (max-width: 768px) {
   .footer-content {
     flex-direction: column;
+    gap:50px;
+    width: 80%;
+    padding-left: 8%;
   }
 
   .banner-cric {
@@ -662,6 +666,7 @@ sport-card img::after {
     height: auto;
     width: 90%;
     padding-bottom: 10px;
+   
      /* Adjus90%t as necessary to create some space at the bottom */
 }
 
@@ -679,6 +684,24 @@ sport-card img::after {
     width: 80%; /* You might want to adjust this based on your design requirements */
     margin-left: 10%; /* Adjust to center the element */
     margin-top: 15px; /* Adds some space between the elements */
+}
+
+.lower-reg {
+  font-size: 16px; /* Reduced font size */
+  line-height: 120%; /* Adjusted line height */
+  /* Add any other necessary styles for mobile here */
+}
+
+.image-container {
+  width:90%;
+  margin-left: 5%;
+  align-content: center;
+  justify-content: center;
+}
+
+.left{
+  width: 80%;
+  margin-left: 8%;
 }
 
   /* Additional adjustments can be made if necessary. */
