@@ -61,6 +61,104 @@
   height: 70%;
 }
 
+.why-join{
+  border-radius: 10px;
+  border: 1px solid grey;
+
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.08) 0%,
+    rgba(217, 217, 217, 0.04) 100%
+  );
+  box-shadow: 0px 4px 20px -1px rgba(0, 0, 0, 0);
+  backdrop-filter: blur(25px);
+  height: auto;
+  width: 80%;
+  margin: 9%;
+  display: flex;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  gap:2%
+
+}
+
+.join-left{
+  width: 40%;
+}
+
+.join-left img{
+  width: 620px;
+  height: auto;
+}
+.join-right{
+  display: flex;
+  width: 40%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.section-card {
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+  align-items: center;     /* Center the content vertically */
+  position: relative; 
+  margin-top: 40px;    
+  flex-wrap: wrap; 
+  gap:40px;/* Set position to relative for child absolute positioning */
+}
+
+.section-card img{
+  width: 298px;
+  height: auto;
+}
+
+.section-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;      /* Establish a positioning context for children */
+}
+
+/* This will not change */
+.sec-low {
+  border-radius: 10px;
+  background: rgba(221, 0, 184, 0.43);
+  backdrop-filter: blur(32.5px);
+  height: 140px;
+  width: 140px;
+  position: absolute;  /* Position absolutely within .section-1 */
+  bottom: -50px;      /* Adjust as needed to overlap with the SVG above */
+  z-index: 1;         /* Ensure it is above or below the SVG based on what you prefer */
+}
+
+.right-up{
+  
+  color: var(--text-white, #FFF);
+font-feature-settings: 'clig' off, 'liga' off;
+font-family: Quicksand;
+font-size: 48px;
+font-style: normal;
+font-weight: 600;
+line-height: 130%; /* 62.4px */
+letter-spacing: 0.96px;
+
+}
+
+.right-down{
+  color: var(--text-grey, #92929D);
+font-feature-settings: 'clig' off, 'liga' off;
+font-family: Quicksand;
+font-size: 30px;
+font-style: normal;
+font-weight: 500;
+line-height: 149.5%; /* 44.85px */
+letter-spacing: 0.6px;
+
+}
+
 .lower-reg {
   width: 30%;
   height: 74px;
@@ -713,5 +811,38 @@ sport-card img::after {
     margin-left: 8%;
   }
 
+  .why-join{
+    flex-direction: column;
+  
+  }
+  .join-left img {
+    width: 400px;
+    height: auto;
+  }
+  .join-right{
+    width: 80%;
+    padding-left: 10%;
+    gap:30px;
+  }
+
+  .section-card img{
+    width: 158px;
+    height: auto;
+  }
+  .right-up{
+    font-size: 24px;
+  }
+
+  .right-down{
+    font-size: 16px;
+  }
+  .ban-1{
+    font-size: 20px;
+
+  }
+  .ban-2{
+    font-size: 14px;
+
+  }
   /* Additional adjustments can be made if necessary. */
 }
