@@ -109,8 +109,7 @@ const Home = () => {
       <Header />
 
       <div className="card">
-        <div className="inner-card">img
-          <div className="left">
+        <div className="inner-card">       <div className="left">
             <div>Join, Promote And</div>
             <div className="earn"> EARN </div>
             <div className="ear-2"> Earn up to 10% Commission </div>
