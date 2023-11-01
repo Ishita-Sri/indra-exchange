@@ -39,8 +39,9 @@
 .card {
   margin-left: 3%;
   width: 92%;
-  height: 482px;
+  height: auto;
   margin-top: 2%;
+  padding-bottom: 30px;
 
   backdrop-filter: blur(50px);
   background: linear-gradient(
@@ -54,14 +55,20 @@
   border-radius: 20px;
   display: flex;
   flex-direction: column;
+  gap:0px
 }
 
 .inner-card {
   display: flex;
-  height: 70%;
+  height: 60%;
+ 
+}
+.inner-card img{
+  padding-top: 2%;
+  height: 96%;
 }
 
-.why-join{
+.why-join {
   border-radius: 10px;
   border: 1px solid grey;
 
@@ -76,23 +83,21 @@
   width: 80%;
   margin: 9%;
   display: flex;
-  padding-top: 2%;
-  padding-bottom: 2%;
-  gap:2%
-
+  
+  gap: 2%;
 }
 
-.join-left{
-  width: 40%;
+.join-left {
+  width: 60%;
 }
 
-.join-left img{
-  width: 620px;
+.join-left img {
+  width: 100%;
   height: auto;
 }
-.join-right{
+.join-right {
   display: flex;
-  width: 40%;
+  width: 35%;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -102,14 +107,14 @@
 .section-card {
   display: flex;
   justify-content: center; /* Center the content horizontally */
-  align-items: center;     /* Center the content vertically */
-  position: relative; 
-  margin-top: 40px;    
-  flex-wrap: wrap; 
-  gap:40px;/* Set position to relative for child absolute positioning */
+  align-items: center; /* Center the content vertically */
+  position: relative;
+  margin-top: 40px;
+  flex-wrap: wrap;
+  gap: 40px; /* Set position to relative for child absolute positioning */
 }
 
-.section-card img{
+.section-card img {
   width: 298px;
   height: auto;
 }
@@ -119,7 +124,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: relative;      /* Establish a positioning context for children */
+  position: relative; /* Establish a positioning context for children */
 }
 
 /* This will not change */
@@ -129,39 +134,36 @@
   backdrop-filter: blur(32.5px);
   height: 140px;
   width: 140px;
-  position: absolute;  /* Position absolutely within .section-1 */
-  bottom: -50px;      /* Adjust as needed to overlap with the SVG above */
-  z-index: 1;         /* Ensure it is above or below the SVG based on what you prefer */
+  position: absolute; /* Position absolutely within .section-1 */
+  bottom: -50px; /* Adjust as needed to overlap with the SVG above */
+  z-index: 1; /* Ensure it is above or below the SVG based on what you prefer */
 }
 
-.right-up{
-  
-  color: var(--text-white, #FFF);
-font-feature-settings: 'clig' off, 'liga' off;
-font-family: Quicksand;
-font-size: 48px;
-font-style: normal;
-font-weight: 600;
-line-height: 130%; /* 62.4px */
-letter-spacing: 0.96px;
-
+.right-up {
+  color: var(--text-white, #fff);
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Quicksand;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%; /* 62.4px */
+  letter-spacing: 0.96px;
 }
 
-.right-down{
-  color: var(--text-grey, #92929D);
-font-feature-settings: 'clig' off, 'liga' off;
-font-family: Quicksand;
-font-size: 30px;
-font-style: normal;
-font-weight: 500;
-line-height: 149.5%; /* 44.85px */
-letter-spacing: 0.6px;
-
+.right-down {
+  color: var(--text-grey, #92929d);
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Quicksand;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 149.5%; /* 44.85px */
+  letter-spacing: 0.6px;
 }
 
 .lower-reg {
   width: 30%;
-  height: 74px;
+  height: auto;
   flex-shrink: 0;
   margin-left: 4%;
   border: 1px solid;
@@ -171,9 +173,15 @@ letter-spacing: 0.6px;
   display: flex;
   align-items: center;
   justify-content: center;
+  gap:22px;
+  padding-left: 20px;
+  padding-right: 20px;
+ 
 
-  color: #dd00b8;
+ 
   font-family: "Quicksand", sans-serif;
+  color: #FFF;
+  
   font-size: 20px;
   font-style: normal;
   font-weight: 600;
@@ -183,9 +191,17 @@ letter-spacing: 0.6px;
 
 .img-in {
   transform: skewX(20deg);
-  gap: 20%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 4px;
+
 }
 
+.img-in svg{
+  width:30px;
+
+}
 .left {
   width: 60%;
   padding-top: 5%;
@@ -340,6 +356,9 @@ letter-spacing: 0.6px;
   letter-spacing: 0.8px;
   margin-top: 45px;
   margin-left: 4%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .heading-2 {
@@ -352,6 +371,9 @@ letter-spacing: 0.6px;
   line-height: 149.5%; /* 29.9px */
   letter-spacing: 0.4px;
   margin-left: 4%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .sports-all {
@@ -359,7 +381,8 @@ letter-spacing: 0.6px;
   flex-wrap: wrap; /* This allows items to wrap onto the next line */
   justify-content: space-between; /* This spaces the images evenly */
   margin: 5%;
-  gap: 10%;
+
+  gap: 0px;
   color: #ddd;
   font-feature-settings: "clig" off, "liga" off;
   font-family: "Quicksand", sans-serif;
@@ -369,11 +392,32 @@ letter-spacing: 0.6px;
   line-height: 130%; /* 31.2px */
   letter-spacing: 0.48px;
 }
-
-.sports-all-3{
-  margin-top: 35px;
+.sports-x{
   display: flex;
-  gap:13px
+  flex-direction: column;
+  gap:20px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.sports-all-3 {
+  background: linear-gradient(
+    170deg,
+    rgba(53, 63, 84, 0.6) 27.98%,
+    rgba(34, 40, 52, 0.6) 81.2%
+  );
+  stroke-width: 2px;
+  stroke: #fff;
+  filter: drop-shadow(0px 20px 60px rgba(16, 20, 28, 0.6));
+  backdrop-filter: blur(50px);
+  width: 250px;
+  height: 190px;
+  flex-shrink: 0;
+  border-radius: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .sport-card {
@@ -381,28 +425,7 @@ letter-spacing: 0.6px;
   margin-bottom: 7%;
 }
 
-sport-card img {
-  position: relative;
-  width: 270px;
-  height: 262px;
-  flex-shrink: 0;
-  border-radius: 20px;
-  overflow: hidden;
-  z-index: 1;
-}
 
-sport-card img::before,
-sport-card img::after {
-  content: "";
-  position: absolute;
-  top: -2px;
-  right: -2px;
-  bottom: -2px;
-  left: -2px;
-  border-radius: inherit;
-  background: linear-gradient(170deg, #353f54 27.98%, #222834 81.2%);
-  z-index: -1;
-}
 
 .follower {
   display: flex;
@@ -525,6 +548,7 @@ sport-card img::after {
 .spon-head-2 {
   display: flex;
   flex-direction: column; /* To stack children vertically */
+  width: 100%;
   /* To center-align content vertically */
 }
 
@@ -555,6 +579,10 @@ sport-card img::after {
   font-weight: 600;
   line-height: 130%; /* 52px */
   letter-spacing: 0.8px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .sub-head-2 {
@@ -566,6 +594,10 @@ sport-card img::after {
   font-weight: 500;
   line-height: 149.5%; /* 29.9px */
   letter-spacing: 0.4px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .lower-banners {
@@ -700,6 +732,7 @@ sport-card img::after {
 
 /* This media query targets devices with max-width of 768px, which covers many mobile devices */
 
+
 @media only screen and (max-width: 768px) {
   .footer-content {
     flex-direction: column;
@@ -785,17 +818,22 @@ sport-card img::after {
   .inner-card {
     flex-direction: column;
     height: auto;
+    align-items: center;
+    justify-content: center;
   }
 
   .lower-reg {
     width: 80%; /* You might want to adjust this based on your design requirements */
-    margin-left: 10%; /* Adjust to center the element */
-    margin-top: 15px; /* Adds some space between the elements */
+    margin-left: 9%; /* Adjust to center the element */
+    margin-top: 15px;
+    padding: 1%; 
+    height: auto;/* Adds some space between the elements */
   }
 
   .lower-reg {
     font-size: 16px; /* Reduced font size */
     line-height: 120%; /* Adjusted line height */
+    
     /* Add any other necessary styles for mobile here */
   }
 
@@ -806,42 +844,130 @@ sport-card img::after {
     justify-content: center;
   }
 
+  .sports-x{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+  }
+
   .left {
     width: 80%;
     margin-left: 8%;
   }
 
-  .why-join{
+  .why-join {
     flex-direction: column;
-  
+    padding-bottom: 10px;
+  }
+  .join-left{
+    width:100%;
   }
   .join-left img {
-    width: 400px;
+    width: 100%;
     height: auto;
   }
-  .join-right{
+  .join-right {
     width: 80%;
     padding-left: 10%;
-    gap:30px;
+    gap: 30px;
   }
 
-  .section-card img{
+  .section-card img {
     width: 158px;
     height: auto;
   }
-  .right-up{
+  .right-up {
     font-size: 24px;
   }
 
-  .right-down{
+  .right-down {
     font-size: 16px;
   }
-  .ban-1{
+  .ban-1 {
+    font-size: 20px;
+  }
+  .ban-2 {
+    font-size: 14px;
+  }
+
+  .welcome-text{
+    font-size: 24px;
+    width: 90%;
+  }
+  .sub-head-1{
     font-size: 20px;
 
+
   }
-  .ban-2{
+  .sub-head-2{
     font-size: 14px;
+    align-items: center;
+    justify-content: center;
+  
+    
+  }
+  .heading-2{
+    font-size: 14px;
+    
+  }
+  .heading-1{
+    font-size: 20px;
+    
+  }
+
+  .sports-all-3{
+    width:158px;
+    height:128px;
+  }
+
+  .sports-all-3 img{
+    width:100px !important;
+    height: auto !important;
+  }
+  .tig{
+    width:100px !important;
+    height: 100px !important;
+
+  }
+
+  .log-one,.log-two{
+    font-size:13px;
+  }
+
+  .sports-all{
+    padding: auto;
+    margin-left: 4px;
+    gap:10px !important;
+  }
+
+ 
+
+  .sport-card{
+    width:142px;
+    height: 200px;
+    gap:1px !important;
+    padding-left: 0px;
+    margin-left: 0px;
+    
+  }
+  .login-buttons{
+    height: auto;
+    margin-top: 0px;
+    padding-top: 25px;
+  }
+  .sport-card img{
+    width:142px;
+    height: 172px;
+
+  }
+
+  .follower{
+    font-size: 14px;
+    margin-top: 0px;
+    line-height: 1;
+    gap:0px;
+    width: 100%;
+    margin-left: 0px;
 
   }
   /* Additional adjustments can be made if necessary. */
