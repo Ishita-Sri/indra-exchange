@@ -740,11 +740,22 @@ a {
 @media only screen and (max-width: 768px) {
   .footer-content {
     flex-direction: column;
-    gap: 50px;
+    gap: 0px;
     width: 80%;
     padding-left: 8%;
   }
-
+  .footer-2{
+    margin-top: 2px !important;
+  }
+   
+  .social-media{
+  
+    z-index: 1 !important;
+  }
+   
+  .footer-content-2{
+    width:100% !important;
+  }
   .banner-cric {
     flex-direction: column;
     width: 94%;
