@@ -809,7 +809,7 @@ a {
   .card {
     height: auto;
     width: 90%;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
 
     /* Adjus90%t as necessary to create some space at the bottom */
   }
