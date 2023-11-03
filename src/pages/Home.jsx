@@ -307,33 +307,39 @@ const Home = () => {
           <div className="sports-all-3">
             <img alt = "" className= "tig"src={spon1}></img>
           </div>
+          <a href = "https://mytiger247.com/" target="blank">
           <div className="log-one">
             <div className="log-two">
               <div className="log-tex">get demo</div>
             </div>
           </div>
+          </a>
         </div>
 
         <div className="sports-x">
           <div className="sports-all-3">
             <img alt = "" style={{ width: "173px", height: "100px" }} src={spon2}></img>
           </div>
+          <a href = "https://www.diamondexch9.com/" target="blank">
           <div className="log-one">
             <div className="log-two">
               <div className="log-tex">get demo</div>
             </div>
           </div>
+          </a>
         </div>
 
         <div className="sports-x">
           <div className="sports-all-3">
             <img alt = "" style={{ width: "160px", height: "90px" }} src={spon3}></img>
           </div>
+          <a href = "https://www.silverexch.com/" target="blank">
           <div className="log-one">
             <div className="log-two">
               <div className="log-tex">get demo</div>
             </div>
           </div>
+          </a>
         </div>
 
         
@@ -341,12 +347,13 @@ const Home = () => {
             <div className="sports-all-3">
               <img alt = "" style={{ width: "160px", height: "60px" }} src={spon4}></img>
             </div>
-
+            <a href = "http://www.saffronexch.com/" target="blank">
             <div className="log-one">
               <div className="log-two">
                 <div className="log-tex">get demo</div>
               </div>
             </div>
+            </a>
           </div>
 
         <div className="sports-x">
@@ -354,23 +361,26 @@ const Home = () => {
             <img alt = "" style={{ width: "160px", height: "60px" }} src={spon5}></img>
           </div>
 
-
+           <a href = "https://www.world7.com/" target="blank">
           <div className="log-one">
             <div className="log-two">
               <div className="log-tex">get demo</div>
             </div>
           </div>
+          </a>
         </div>
 
         <div className="sports-x">
           <div className="sports-all-3">
             <img alt = "" style={{ width: "160px", height: "60px" }} src={spon6}></img>
           </div>
+          <a href = "https://www.skyexch.art/" target="blank">
           <div className="log-one">
             <div className="log-two">
               <div className="log-tex">get demo</div>
             </div>
           </div>
+          </a>
         </div>
       </div>
 
