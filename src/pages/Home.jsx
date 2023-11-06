@@ -1,35 +1,36 @@
 import React from "react";
+import { useEffect } from "react";
 
 import Header from "../components/Header";
 
 import logo from "../assets/log0.svg";
-import logo1 from "../assets/logo-1.png";
+import logo1 from "../assets/logo-1.webp";
 
-import one from "../assets/1.png";
-import two from "../assets/2.png";
-import three from "../assets/3.png";
-import five from "../assets/4.png";
-import four from "../assets/5.png";
-import eig from "../assets/6.png";
-import sev from "../assets/7.png";
-import six from "../assets/8.png";
+import one from "../assets/1.webp";
+import two from "../assets/2.webp";
+import three from "../assets/3.webp";
+import five from "../assets/4.webp";
+import four from "../assets/5.webp";
+import eig from "../assets/6.webp";
+import sev from "../assets/7.webp";
+import six from "../assets/8.webp";
 
-import spon1 from "../assets/spon1.png";
+import spon1 from "../assets/spon1.webp";
 
-import spon2 from "../assets/spon2.png";
-import spon3 from "../assets/spon3.png";
-import spon4 from "../assets/spon4.png";
-import spon5 from "../assets/spon5.png";
-import spon6 from "../assets/spon6.png";
+import spon2 from "../assets/spon2.webp";
+import spon3 from "../assets/spon3.webp";
+import spon4 from "../assets/spon4.webp";
+import spon5 from "../assets/spon5.webp";
+import spon6 from "../assets/spon6.webp";
 import rob from "../assets/rob.png";
 
 import star from "../assets/star.svg";
 
-import on from "../assets/12.png";
-import tw from "../assets/13.png";
-import th from "../assets/14.png";
-import fo from "../assets/15.png";
-import wh from "../assets/wheel2.png";
+import on from "../assets/12.webp";
+import tw from "../assets/13.webp";
+import th from "../assets/14.webp";
+import fo from "../assets/15.webp";
+import wh from "../assets/wheel2.webp";
 import pin from "../assets/pin.svg";
 
 import "./home.css";
@@ -45,6 +46,22 @@ const Home = () => {
     { image: sev, followers: 110 },
     { image: eig, followers: 2240 },
   ];
+
+
+  useEffect(() => {
+    const imagesToPreload = [
+      logo1, one, two, three, four, five,
+      six, sev, eig, spon1, spon2, spon3,
+      spon4, spon5, spon6, rob, star, on,
+      tw, th, fo, wh,
+    ];
+
+    imagesToPreload.forEach((imageSrc) => {
+      const img = new Image();
+      img.src = imageSrc;
+      console.log(img.src)
+    });
+  }, []);
 
   return (
     <div className="landing-page">
@@ -383,12 +400,7 @@ const Home = () => {
 
         <div className="sports-x">
           <div className="sports-all-31">
-            <img
-          
-              alt=""
-            
-              src={spon6}
-            ></img>
+            <img alt="" src={spon6}></img>
           </div>
           <a href="https://www.skyexch.art/" target="blank">
             <div className="log-one">
@@ -467,10 +479,7 @@ const Home = () => {
               className="social-media"
               style={{ marginBottom: "55px", display: "flex", gap: "30px" }}
             >
-              <a
-                href="https://www.instagram.com/indraexchange/"
-                target="blank"
-              >
+              <a href="https://www.instagram.com/indraexchange/" target="blank">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="40"
@@ -486,10 +495,7 @@ const Home = () => {
                 </svg>
               </a>
 
-              <a
-                href="https://t.me/indraexchangeofficial"
-                target="blank"
-              >
+              <a href="https://t.me/indraexchangeofficial" target="blank">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="25"
