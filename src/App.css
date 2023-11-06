@@ -12,9 +12,10 @@
   position: fixed; /* Fixed position to cover the entire viewport */
   top: 0;
   left: 0;
-  width: 100vw; /* Full width */
-  height: 100vh; /* Full height */
+  width: 100%; /* Full width */
+  height: 800px; /* Full height */
   background-color:  #021a60; /* Black background color */
+  z-index: 1;
  
 }
 
