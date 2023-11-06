@@ -14,7 +14,7 @@ const Footer = lazy(() => import('./components/Footer'));
 const App = () => {
   return (
     <Router>
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<div className='fallback'></div>}>
       
       
         <Routes>
