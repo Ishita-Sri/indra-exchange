@@ -14,6 +14,8 @@ import four from "../assets/5.webp";
 import eig from "../assets/6.webp";
 import sev from "../assets/7.webp";
 import six from "../assets/8.webp";
+import left from "../assets/xyz.webp"
+import right from "../assets/abc.webp"
 
 import spon1 from "../assets/spon1.webp";
 
@@ -71,6 +73,8 @@ const Home = () => {
       th,
       fo,
       wh,
+      left,
+      right
     ];
 
     imagesToPreload.forEach((imageSrc) => {
@@ -83,12 +87,12 @@ const Home = () => {
   return (
     <div className="landing-page">
       <div className="left-gradient">
-      <svg xmlns="http://www.w3.org/2000/svg" width="156" height="633" fill="linear-gradient(171deg, #DD00B8 -27.63%, #4B4CED 191.62%)"><path d="m-119.084 527.434-83.505 86.019c-25.807 26.584-68.972 24.905-92.635-3.603a62.294 62.294 0 0 1-12.24-55.914l112.962-421.58C-168.505 35.333-67.373-20.924 28.771 8.153 157.221 47 198.015 208.68 103.372 303.818l-222.456 223.616Z" fill="url(#a)"/><defs><linearGradient id="a" x1="-87.118" y1="979.384" x2="-24.755" y2="-774.48" gradientUnits="userSpaceOnUse"><stop stop-color="#DD00B8"/><stop offset="1" stop-color="#4B4CED"/></linearGradient></defs></svg>
+      <img src = {left}></img>
       </div>
       <img src={star} className="star-1" alt=""></img>
 
       <div className="right-gradient">
-      <svg width="249" height="600" fill="none" viewBox="0 0 209 586" xmlns="http://www.w3.org/2000/svg"><path d="m181.4 45.291 58.396-104.7c18.047-32.358 60.176-41.908 90.412-20.496a62.298 62.298 0 0 1 26.294 50.84v436.45c0 100.45-83.125 180.96-183.52 177.76-134.13-4.279-215.38-149.89-148.58-266.28l157-273.57z" fill="url(#a)"/><defs><linearGradient id="a" x1="33.548" x2="427.24" y1="-382.99" y2="1327.3" gradientUnits="userSpaceOnUse"><stop stop-color="#DD00B8" offset="0"/><stop stop-color="#4B4CED" offset="1"/></linearGradient></defs></svg>
+      <img src = {right}></img>
       </div>
 
       <img src={star} className="star-2" alt=""></img>
