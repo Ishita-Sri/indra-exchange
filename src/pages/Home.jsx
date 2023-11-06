@@ -1,5 +1,5 @@
 import React from "react";
-import { useEffect } from "react";
+import { useEffect, useRef  } from "react";
 
 import Header from "../components/Header";
 
@@ -34,10 +34,20 @@ import th from "../assets/14.webp";
 import fo from "../assets/15.webp";
 import wh from "../assets/wheel2.webp";
 import pin from "../assets/pin.svg";
+import { Scrollbar } from "smooth-scrollbar-react";
+
 
 import "./home.css";
 
 const Home = () => {
+  const scrollbar = useRef(null);
+  useEffect(() => {
+    console.log(scrollbar.current);
+  }, []);
+
+  const scrollToRef = (scrollbar) => window.scrollTo({ top: scrollbar.current.offsetTop, behavior: 'smooth' });
+
+
   const sport = [
     { image: one, followers: 420 },
     { image: two, followers: 320 },
@@ -85,6 +95,15 @@ const Home = () => {
   }, []);
 
   return (
+    <Scrollbar
+    ref={scrollbar}
+          plugins={{
+            overscroll: {
+              effect: "bounce"
+            }}}
+    
+    >
+    
     <div className="landing-page">
       <div className="left-gradient">
         <img loading="lazy" src={left}></img>
@@ -498,6 +517,7 @@ const Home = () => {
         </div>
       </div>
     </div>
+    </Scrollbar>
   );
 };
 
