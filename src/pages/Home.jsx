@@ -44,6 +44,14 @@ const Home = () => {
     console.log(scrollbar.current);
   }, []);
 
+  const options = {
+    damping: 0.1,
+    thumbMinSize: 20,
+    renderByPixels: true,
+    alwaysShowTracks: false,
+    continuousScrolling: true,
+  };
+
 
   const sport = [
     { image: one, followers: 420 },
@@ -92,7 +100,13 @@ const Home = () => {
   }, []);
 
   return (
-  
+    <Scrollbar
+      ref={scrollbar}
+    
+      options={options}
+    
+
+    >
       <div className="landing-page">
         <div className="left-gradient">
           <img loading="lazy" src={left}></img>
@@ -512,7 +526,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-    
+    </Scrollbar>
   );
 };
 
