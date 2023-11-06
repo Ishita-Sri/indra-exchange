@@ -3,6 +3,11 @@
   background-color: #021a60;
 }
 
+/* styles.css */
+html {
+  scroll-behavior: smooth;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;

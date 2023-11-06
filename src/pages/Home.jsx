@@ -44,8 +44,6 @@ const Home = () => {
     console.log(scrollbar.current);
   }, []);
 
-  const scrollToRef = (scrollbar) =>
-    window.scrollTo({ top: scrollbar.current.offsetTop, behavior: "smooth" });
 
   const sport = [
     { image: one, followers: 420 },
@@ -94,10 +92,7 @@ const Home = () => {
   }, []);
 
   return (
-    <Scrollbar
-      ref={scrollbar}
-
-    >
+  
       <div className="landing-page">
         <div className="left-gradient">
           <img loading="lazy" src={left}></img>
@@ -517,7 +512,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-    </Scrollbar>
+    
   );
 };
 
