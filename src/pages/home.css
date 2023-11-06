@@ -423,6 +423,24 @@ a {
   align-items: center;
   justify-content: center;
 }
+.sports-all-31 {
+  background: linear-gradient(
+    170deg,
+    rgba(53, 63, 84, 0.6) 27.98%,
+    rgba(34, 40, 52, 0.6) 81.2%
+  );
+  stroke-width: 2px;
+  stroke: #fff;
+  filter: drop-shadow(0px 20px 60px rgba(16, 20, 28, 0.6));
+  backdrop-filter: blur(50px);
+  width: 250px;
+  height: 190px;
+  flex-shrink: 0;
+  border-radius: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 .sport-card {
   display: flex;
@@ -934,16 +952,22 @@ a {
     width:158px;
     height:128px;
   }
+  .sports-all-31{
+    width:158px;
+    height:128px;
+  }
 
   .sports-all-3 img{
     width:100px !important;
     height: auto !important;
   }
-  .tig{
-    width:100px !important;
-    height: 100px !important;
 
+  .sports-all-31 img{
+    width:60px !important;
+    height: auto !important;
   }
+  
+ 
 
   .log-one,.log-two{
     font-size:13px;

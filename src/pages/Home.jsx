@@ -382,10 +382,11 @@ const Home = () => {
         </div>
 
         <div className="sports-x">
-          <div className="sports-all-3">
+          <div className="sports-all-31">
             <img
+          
               alt=""
-              style={{ width: "160px", height: "60px" }}
+            
               src={spon6}
             ></img>
           </div>
