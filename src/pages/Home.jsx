@@ -47,79 +47,48 @@ const Home = () => {
     { image: eig, followers: 2240 },
   ];
 
-
   useEffect(() => {
     const imagesToPreload = [
-      logo1, one, two, three, four, five,
-      six, sev, eig, spon1, spon2, spon3,
-      spon4, spon5, spon6, rob, star, on,
-      tw, th, fo, wh,
+      logo1,
+      one,
+      two,
+      three,
+      four,
+      five,
+      six,
+      sev,
+      eig,
+      spon1,
+      spon2,
+      spon3,
+      spon4,
+      spon5,
+      spon6,
+      rob,
+      star,
+      on,
+      tw,
+      th,
+      fo,
+      wh,
     ];
 
     imagesToPreload.forEach((imageSrc) => {
       const img = new Image();
       img.src = imageSrc;
-      console.log(img.src)
+      console.log(img.src);
     });
   }, []);
 
   return (
     <div className="landing-page">
       <div className="left-gradient">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="156"
-          height="633"
-          viewBox="0 0 156 633"
-          fill="linear-gradient(171deg, #DD00B8 -27.63%, #4B4CED 191.62%)"
-        >
-          <path
-            d="M-119.084 527.434L-202.589 613.453C-228.396 640.037 -271.561 638.358 -295.224 609.85C-308.132 594.301 -312.695 573.456 -307.464 553.936L-194.502 132.356C-168.505 35.3333 -67.3734 -20.9245 28.7714 8.15287C157.221 47.0004 198.015 208.681 103.372 303.818L-119.084 527.434Z"
-            fill="url(#paint0_linear_118_201)"
-          />
-          <defs>
-            <linearGradient
-              id="paint0_linear_118_201"
-              x1="-87.118"
-              y1="979.384"
-              x2="-24.7548"
-              y2="-774.48"
-              gradientUnits="userSpaceOnUse"
-            >
-              <stop stop-color="#DD00B8" />
-              <stop offset="1" stop-color="#4B4CED" />
-            </linearGradient>
-          </defs>
-        </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="156" height="633" fill="linear-gradient(171deg, #DD00B8 -27.63%, #4B4CED 191.62%)"><path d="m-119.084 527.434-83.505 86.019c-25.807 26.584-68.972 24.905-92.635-3.603a62.294 62.294 0 0 1-12.24-55.914l112.962-421.58C-168.505 35.333-67.373-20.924 28.771 8.153 157.221 47 198.015 208.68 103.372 303.818l-222.456 223.616Z" fill="url(#a)"/><defs><linearGradient id="a" x1="-87.118" y1="979.384" x2="-24.755" y2="-774.48" gradientUnits="userSpaceOnUse"><stop stop-color="#DD00B8"/><stop offset="1" stop-color="#4B4CED"/></linearGradient></defs></svg>
       </div>
       <img src={star} className="star-1" alt=""></img>
 
       <div className="right-gradient">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="249"
-          height="600"
-          viewBox="0 0 209 586"
-          fill="none"
-        >
-          <path
-            d="M181.398 45.2915L239.794 -59.4098C257.841 -91.767 299.97 -101.317 330.206 -79.9053C346.698 -68.2262 356.5 -49.2731 356.5 -29.0645V407.387C356.5 507.833 273.375 588.348 172.981 585.146C38.853 580.867 -42.3971 435.254 24.3984 318.863L181.398 45.2915Z"
-            fill="url(#paint0_linear_118_199)"
-          />
-          <defs>
-            <linearGradient
-              id="paint0_linear_118_199"
-              x1="33.5477"
-              y1="-382.986"
-              x2="427.243"
-              y2="1327.26"
-              gradientUnits="userSpaceOnUse"
-            >
-              <stop stop-color="#DD00B8" />
-              <stop offset="1" stop-color="#4B4CED" />
-            </linearGradient>
-          </defs>
-        </svg>
+      <svg width="249" height="600" fill="none" viewBox="0 0 209 586" xmlns="http://www.w3.org/2000/svg"><path d="m181.4 45.291 58.396-104.7c18.047-32.358 60.176-41.908 90.412-20.496a62.298 62.298 0 0 1 26.294 50.84v436.45c0 100.45-83.125 180.96-183.52 177.76-134.13-4.279-215.38-149.89-148.58-266.28l157-273.57z" fill="url(#a)"/><defs><linearGradient id="a" x1="33.548" x2="427.24" y1="-382.99" y2="1327.3" gradientUnits="userSpaceOnUse"><stop stop-color="#DD00B8" offset="0"/><stop stop-color="#4B4CED" offset="1"/></linearGradient></defs></svg>
       </div>
 
       <img src={star} className="star-2" alt=""></img>
