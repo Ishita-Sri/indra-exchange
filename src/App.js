@@ -1,25 +1,31 @@
-import React from 'react';
+
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Home from './pages/Home';
+
 import "@fontsource/league-gothic";
 
-import Header from './components/Header';
-import Footer from './components/Footer';
 
+import React, { Suspense, lazy } from 'react';
+
+// Lazy-loaded components
+const Home = lazy(() => import('./pages/Home'));
+const Header = lazy(() => import('./components/Header'));
+const Footer = lazy(() => import('./components/Footer'));
 
 const App = () => {
   return (
-
     <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/" element={<Home />} />
-        <Route path="/foot" element={<Footer />} />
-   
-      </Routes>
+      <Suspense fallback={<div>Loading...</div>}>
+      
+      
+        <Routes>
+          <Route path="/" element={<Home />} />
+          {/* Removed the duplicate Home route */}
+     
+        </Routes>
+      </Suspense>
     </Router>
-
   );
 }
 
 export default App;
+

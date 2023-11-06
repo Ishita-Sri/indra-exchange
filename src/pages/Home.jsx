@@ -87,16 +87,16 @@ const Home = () => {
   return (
     <div className="landing-page">
       <div className="left-gradient">
-        <img src={left}></img>
+        <img loading="lazy" src={left}></img>
       </div>
-      <img src={star} className="star-1" alt=""></img>
+      <img loading="lazy" src={star} className="star-1" alt=""></img>
 
       <div className="right-gradient">
-        <img src={right}></img>
+        <img loading="lazy" src={right}></img>
       </div>
 
-      <img src={star} className="star-2" alt=""></img>
-      <img src={star} className="star-3" alt=""></img>
+      <img loading="lazy" src={star} className="star-2" alt=""></img>
+      <img loading="lazy" src={star} className="star-3" alt=""></img>
       <Header />
 
       <div className="card">
@@ -108,7 +108,7 @@ const Home = () => {
             <div className="ear-2"> Earn up to 10% Commission </div>
           </div>
           <div className="right">
-            <img src={logo1} alt=""></img>
+            <img loading="lazy" src={logo1} alt=""></img>
           </div>
         </div>
 
@@ -167,7 +167,7 @@ const Home = () => {
           <div key={index} className="sport-card">
             <div className="image-container">
               <div className="image-effects">
-                <img src={data.image} alt={`sport-card-${index}`} />
+                <img loading="lazy" src={data.image} alt={`sport-card-${index}`} />
               </div>
 
               <div className="follower">
@@ -221,10 +221,10 @@ const Home = () => {
       </div>
 
       <div className="section-card">
-        <img alt="" src={tw}></img>
-        <img alt="" src={on}></img>
-        <img alt="" src={th}></img>
-        <img alt="" src={fo}></img>
+        <img loading="lazy" alt="" src={tw}></img>
+        <img loading="lazy" alt="" src={on}></img>
+        <img loading="lazy" alt="" src={th}></img>
+        <img loading="lazy" alt="" src={fo}></img>
       </div>
 
       <div className="welcome-text" style={{ margin: "6%" }}>
@@ -234,7 +234,7 @@ const Home = () => {
 
       <div className="why-join">
         <div className="join-left">
-          <img alt="" src={wh}></img>
+          <img loading="lazy" alt="" src={wh}></img>
         </div>
 
         <div className="join-right">
@@ -281,7 +281,7 @@ const Home = () => {
       <div className="sports-all">
         <div className="sports-x">
           <div className="sports-all-3">
-            <img alt="" className="tig" src={spon1}></img>
+            <img loading="lazy" alt="" className="tig" src={spon1}></img>
           </div>
           <a href="https://mytiger247.com/" target="blank">
             <div className="log-one">
@@ -363,7 +363,7 @@ const Home = () => {
 
         <div className="sports-x">
           <div className="sports-all-31">
-            <img alt="" src={spon6}></img>
+            <img loading="lazy" alt="" src={spon6}></img>
           </div>
           <a href="https://www.skyexch.art/" target="blank">
             <div className="log-one">
@@ -432,7 +432,7 @@ const Home = () => {
 
         <div className="footer-content">
           <div className="footer-content-2" style={{ width: "75%" }}>
-            <img src={logo}></img>
+            <img loading="lazy" src={logo}></img>
 
             <div className="footer-1">Play exciting games win more prize's</div>
             <div className="footer-2" style={{ marginTop: "55px" }}>
@@ -478,7 +478,7 @@ const Home = () => {
 
           <div className="footer-content-2" style={{ width: "15%" }}>
             <div className="footer-2">Powered by</div>
-            <img src={rob}></img>
+            <img loading="lazy" src={rob}></img>
 
             <svg
               xmlns="http://www.w3.org/2000/svg"
