@@ -252,12 +252,15 @@ a {
 }
 
 .image-container {
-  background-color: linear-gradient(170deg, #353f54 27.98%, #222834 81.2%);
-  border: 2px solid linear-gradient(170deg, #353f54 27.98%, #222834 81.2%);
-
+  background: linear-gradient(170deg, #353f54 27.98%, #222834 81.2%);
+  
+  /* Gradient borders are not natively supported in CSS, so setting a solid border for now */
+  border: 2px solid #353f54; /* Choose one of the colors or create a pseudo-element if a gradient border is needed */
+  
   filter: drop-shadow(0px 20px 60px #10141c)
     drop-shadow(0px -20px 40px rgba(43, 52, 69, 0.5));
 }
+
 
 .log-one {
   display: flex;
@@ -468,7 +471,7 @@ a {
   font-weight: 600;
   line-height: 187.5%; /* 41.25px */
   gap: 12px;
-  padding-left: 20%;
+  
 }
 
 .welcome-text {
@@ -763,6 +766,87 @@ a {
 /* This media query targets devices with max-width of 768px, which covers many mobile devices */
 
 
+
+
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap");
+
+body {
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.gallery-container {
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap:60px;
+  margin:30px;
+ 
+}
+
+.image-box {
+  position: relative;
+  width: 250px;
+  height: 300px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.image-box img {
+  width: 100%;
+  height: auto;
+}
+
+.followers-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+@media only screen and (max-width: 768px) {
+  .gallery-container {
+    /* We keep the padding to ensure there's space at the edges */
+    padding: 10px;
+    gap: 10px; /* This sets the gap between images */
+    margin: 0px !important;
+  }
+  .image-box {
+    /* Set the width minus the total padding and gap */
+    width: calc(50% - 20px); /* 20px accounts for gap plus padding */
+    height: auto;
+    margin: 5px !important /* This maintains a margin around the images */
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .gallery-container {
+    /* Adjust the padding if necessary for mobile screens */
+    padding: 5px !important;
+    gap: 5px !important; /* Smaller gap for smaller screens */
+    margin: 0px !important;
+  }
+  .image-box {
+    /* Set the width to account for the padding and gap */
+    width: calc(50% - 15px) !important; /* 15px accounts for gap plus padding */
+    margin: 5px !important; /* Maintain a margin around the images */
+  }
+}
+
+
+
+
+
+
+
 @media only screen and (max-width: 768px) {
   .footer-content {
     flex-direction: column;
@@ -881,13 +965,14 @@ a {
   .image-container {
     width: 90%;
     margin-left: 5%;
-    align-content: center;
+    /* Centering content with flexbox */
+    display: flex;
     justify-content: center;
+    align-items: center;
   }
 
+
   .sports-x{
-    display: flex;
-    flex-direction: column;
     gap:20px;
   }
 
@@ -982,21 +1067,22 @@ a {
   }
 
   .sports-all{
-    padding: auto;
-    margin-left: 4px;
-    gap:10px !important;
+    /* Margin and padding adjustments for smaller screens */
+    margin-left: 4px; /* Adjust as needed */
+    gap: 10px;
   }
+
 
  
 
   .sport-card{
-    width:142px;
+    width: 142px;
     height: 200px;
-    gap:1px !important;
-    padding-left: 0px;
-    margin-left: 0px;
-    
+    gap: 10px; /* Using consistent gap from .sports-all */
+    padding-left: 0;
+    margin-left: 0;
   }
+
   .login-buttons{
     height: auto;
     margin-top: 0px;
@@ -1010,11 +1096,14 @@ a {
 
   .follower{
     font-size: 14px;
-    margin-top: 0px;
+
     line-height: 1;
     gap:0px;
     width: 100%;
-    margin-left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
 
   }
   /* Additional adjustments can be made if necessary. */
