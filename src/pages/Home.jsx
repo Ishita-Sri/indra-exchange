@@ -128,7 +128,7 @@ const Home = () => {
           </div>
 
           <div>
-            <a href="https://wa.me/+917600400463">
+            <a href="https://wa.me/+917600400432">
               <div className="lower-reg">
                 <div className="img-in" alt="">
                   <svg
@@ -150,7 +150,7 @@ const Home = () => {
             </a>
             <br />
 
-            <a href="https://wa.me/+917600400457">
+            <a href="https://wa.me/+917600400439">
               <div className="lower-reg">
                 <div className="img-in" alt="">
                   <svg
